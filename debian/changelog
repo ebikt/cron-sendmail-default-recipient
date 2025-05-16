@@ -1,0 +1,5 @@
+cron-sendmail-default-recipient (1.0) unstable; urgency=medium
+
+  First release.
+
+ -- Tomas Ebenlendr <tomas.ebenlendr@centrumholdings.com>  Fri, 16 May 2025 19:58:23 +0200

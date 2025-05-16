@@ -1,0 +1,16 @@
+Source: cron-sendmail-default-recipient
+Build-Depends: build-essential, make, debhelper (>= 7)
+Maintainer: Tomas Ebenlendr <ebik@ucw.cz>
+Standards-Version: 3.7.3
+XCBS-Private-Project: nos
+XB-Private-Target: implied
+Homepage: https://github.com/ebikt/cron-sendmail-default-recipient/
+
+Package: cron-sendmail-default-recipient
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Sendmail wrapper that replaces default cron recipient
+ This package replaces /usr/sbin/sendmail with wrapper that calls (diverted)
+ original version of /usr/sbin/sendmail, but it replaces last argument with
+ contents of /etc/cron-sendmail-default-recipient when
+ called with -FCronDaemon and last argument does not contain '@'.

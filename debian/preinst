@@ -1,0 +1,23 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    install|upgrade)
+	mkdir -p /usr/lib/cron-sendmail-default-recipient/
+	dpkg-divert --package cron-sendmail-default-recipient --add --rename \
+	  --divert /usr/sbin/cron-sendmail-default-original \
+	  /usr/sbin/sendmail
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0
