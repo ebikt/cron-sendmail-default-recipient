@@ -4,6 +4,10 @@
 #include <fcntl.h>
 #include <stdio.h>
 
+#ifndef SBINDIR
+#define SBINDIR /usr/sbin
+#endif
+
 #define Q(S) #S
 #define QA(S) Q(S)
 
