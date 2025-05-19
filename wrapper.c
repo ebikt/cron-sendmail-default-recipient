@@ -19,7 +19,7 @@
 int main (int argc, char **argv) {
   int i, fd, len;
   char buffer[1024], *start;
-  if (argc[argv] != NULL) ERROR(67, "Assertion error: argc[argv] must be NULL")
+  if (argv[argc] != NULL) ERROR(67, "Assertion error: argv[argc] must be NULL")
 
   switch (argc < 3) {
     case 0: // There is program name and at least two arguments
