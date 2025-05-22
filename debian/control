@@ -2,7 +2,7 @@ Source: cron-sendmail-default-recipient
 Build-Depends: build-essential, make, debhelper (>= 7)
 Maintainer: Tomas Ebenlendr <ebik@ucw.cz>
 Standards-Version: 3.7.3
-XCBS-Private-Project: nos
+XCBS-Private-Project: infra
 XB-Private-Target: implied
 Homepage: https://github.com/ebikt/cron-sendmail-default-recipient/
 
